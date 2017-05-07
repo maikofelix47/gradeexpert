@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Grade Expert</title>
+
+    <!-- Bootstrap -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- custom css -->
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <!-- fontawesome css -->
+
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+
+    <!-- google fonts -->
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <nav class="navbar navbar-default navbar-fixed-top" id="main_navbar">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    <a class="navbar-brand" href="/"><img src="images/grade_expert_logo.png" height="60"/></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+      
+       
+      </ul>
+    
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="order.html">Order</a></li>
+        <li><a href="prices.html">Prices</a></li>
+        <li><a href="sample.html">Samples</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="hiw.html">How It Works</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="">Login</a></li>
+        <li><a href="">Sign Up</a></li>       
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!-- start of price calc -->
+<div class="col-md-12" id="price_calc_col">
+    <div class="row">
+
+        <div class="col-md-offset-2 col-md-8">
+            <div class="panel panel-default">
+                <div class="panel-heading paper_panel">
+                  <div class="row">
+                    <a id="paper_info_link">
+                     <div class="col-md-4 panel_section">
+                       <span class="badge" id="price_badge">1</span> Paper Information  
+                     </div>
+                    </a>
+                    <a id="price_calc_link">
+                     <div class="col-md-4 panel_section">
+                       <span class="badge">2</span> Price Calculation 
+                     </div>
+                    </a>
+                    <a id="extra_features_link">
+                     <div class="col-md-4 panel_section">
+                       <span class="badge">3</span> Extra features
+                      </div>
+                    </a>
+                  </div>
+                   
+                </div>
+                <div class="panel-body">
+                   
+                   <div class="row">
+                  <!-- start of paper info -->
+                   <div id="paper_info">
+                    <div class="col-md-offset-2 col-md-8">
+                    <form class="form-horizontal">
+                        <div class="row">
+
+                            <div class="form-group">
+                                <div class="col-md-4">
+                                <label class="control-label">TYPE OF PAPER</label>
+                                </div>
+                                <div class="col-md-8">
+                                <select name="deadline" class="form-control">
+                                    <option value="1">Admission Essay</option>
+                                    <option value="2">Biography</option>
+                                    <option value="3">Cover Letter</option>
+                                </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-md-4">
+                                <label class="control-label">SUBJECT</label>
+                                </div>
+                                <div class="col-md-8">
+                                <select name="deadline" class="form-control">
+                                    <option value="1">Marketing</option>
+                                    <option value="2">Culture</option>
+                                    <option value="3">Economics</option>
+                                </select>
+                                </div>
+                            </div>
+
+                             <div class="form-group">
+                                <div class="col-md-4">
+                                <label class="control-label">TOPIC</label>
+                                </div>
+                                <div class="col-md-8">
+                                  <input type="text" class="form-control" name="topic" />
+                                </div>
+                            </div>
+
+                             <div class="form-group">
+                                <div class="col-md-4">
+                                <label class="control-label">PAPER DETAILS</label>
+                                </div>
+                                <div class="col-md-8">
+                                  <textarea class="form-control"></textarea>
+                                </div>
+                            </div>
+
+                             <div class="form-group">
+                                <div class="col-md-4">
+                                <label class="control-label">MATERIALS</label>
+                                </div>
+                                <div class="col-md-8">
+                                  <input type="file" class="form-control"/>
+                                  <h6>Maximum file size is 25 MB</h6>
+                                </div>
+                             </div>
+
+                              <div class="form-group">
+                                <div class="col-md-4">
+                                <label class="control-label">SOURCES</label>
+                                </div>
+                                <div class="col-md-8">
+                                  <input type="number"  min="0" class="form-control"/>
+                                </div>
+                              </div>
+
+                               <div class="form-group">
+                                <div class="col-md-4">
+                                <label class="control-label">PAPER FORMAT</label>
+                                </div>
+                                <div class="col-md-8">
+                                <select name="deadline" class="form-control">
+                                    <option value="1">APA</option>
+                                    <option value="2">MLA</option>
+                                    <option value="3">Chicago</option>
+                                    <option value="2">Havard</option>
+                                    <option value="3">Other</option>
+                                </select>
+                                </div>
+                             </div>
+
+                              <div class="form-group">
+                                <div class="col-md-12">
+                                  <a class="btn btn-primary btn-lg price_btn">PRICE CALCULATION</a>
+                                </div>
+                             </div>
+
+                        </div>                
+                   
+                   </form>
+                   </div>
+                   </div>
+                   <!-- end of paper info -->
+
+                        <!-- start of paper price info -->
+                   <div id="paper_price_calc" style="display:none">
+                    <div class="col-md-offset-2 col-md-8">
+                    <form class="form-horizontal">
+                        <div class="row">
+
+                            <div class="form-group">
+                                <div class="col-md-4">
+                                <label class="control-label">ACADEMIC LEVEL</label>
+                                </div>
+                                <div class="col-md-8">
+                                <select name="academic_level" class="form-control">
+                                    <option value="1">High School</option>
+                                    <option value="2">Undergraduate</option>
+                                    <option value="3">Masters</option>
+                                     <option value="4">PHD</option>
+                                </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-md-4">
+                                <label class="control-label">TYPE OF WORK</label>
+                                </div>
+                                <div class="col-md-8">
+                                <select name="deadline" class="form-control">
+                                    <option value="1">Writing from scratch</option>
+                                    <option value="2">Editing/Proofreading</option>
+                                    <option value="3">Problem Solving</option>
+                                </select>
+                                </div>
+                            </div>
+
+
+
+                            <div class="form-group">
+                                <div class="col-md-4">
+                                <label class="control-label">DEADLINE</label>
+                                </div>
+                                <div class="col-md-8">
+                                <select name="deadline" class="form-control">
+                                    <option value="1">14 DAYS</option>
+                                    <option value="2">9 DAYS</option>
+                                    <option value="3">7 DAYS</option>
+                                </select>
+                                </div>
+                            </div>
+
+                             <div class="form-group">
+                                <div class="col-md-4">
+                                <label class="control-label">PAGES</label>
+                                </div>
+                                <div class="col-md-8">
+                                  <input type="number"  min="1" value="1" class="form-control"/>
+                                </div>
+                            </div>
+
+                           
+
+                            <div class="form-group">
+                                <div class="col-md-4">
+                                <label class="control-label">SPACING</label>
+                                </div>
+                                <div class="col-md-8">
+                                <select name="spacing" class="form-control">
+                                    <option value="1">SINGLE</option>
+                                    <option value="2">DOUBLE</option>
+                                </select>
+                                </div>
+                            </div>
+
+                          <div class="form-group">
+                                <div class="col-md-4">
+                                <label class="control-label">NO OF SLIDES</label>
+                                </div>
+                                <div class="col-md-8">
+                                  <input type="number"  min="1" value="1" class="form-control"/>
+                                </div>
+                            </div>
+
+                             
+
+                              
+
+                              <div class="form-group">
+                                <div class="col-md-4">
+                                  <a href="#" id="to_paper_info" class="btn btn-success"><i class="fa fa-arrow-left fa-fw"></i>Back</a>
+                                </div>
+                                <div class="col-md-8">
+                                  <a class="btn btn-primary btn-lg price_btn">PRICE CALCULATION</a>
+                                </div>
+                             </div>
+
+                        </div>                
+                   
+                   </form>
+                   </div>
+                   </div>
+                   <!-- end of paper price calculation -->
+
+                  <!-- start of extra features -->
+                   <div id="extra_features" style="display:none">
+                    <div class="col-md-offset-2 col-md-8">
+                    <form class="form-horizontal">
+                        <div class="row">
+
+                            <div class="form-group">
+                                <div class="col-md-4">
+                                <label class="control-label">CHOOSE YOUR WRITER</label>
+                                </div>
+                                <div class="col-md-8">
+                                <select name="writer" class="form-control">
+                                    <option value="1">Best Available(Standard Price)</option>
+                                    <option value="2">Pro Writer(+25%)</option>
+                                    <option value="3">Top Writer(+45%)</option>
+                                </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-md-4">
+                                   <label class="control-label">ADDITIONAL FEATURES</label>
+                                </div>
+                                <div class="col-md-8">
+                                      <div class="checkbox">
+                                            <label>
+                                              <input type="checkbox" name="prog_delivery"/>PLAGIARISM REPORT (+$9.99)
+                                            </label>
+                                      </div>
+                                      <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" name="prog_delivery"/>PROGRESSIVE DELIVERY (+$10.00)
+                                            </label>                               
+                                      </div>
+                                  </div>
+                            </div>
+
+                             <div class="form-group">
+                                <div class="col-md-4">
+                                <label class="control-label">DISCOUNT</label>
+                                </div>
+                                <div class="col-md-4">
+                                  <input type="text" id="discount_code" class="form-control" name="discount" onkeyup="checkDiscount()" placeholder="Enter Discount Code"/>
+                                </div>
+                                <div class="col-md-4">
+                                  <a class="btn btn-primary btn_apply" id="btn_apply" style="display:none">APPLY</a>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-offset-2 col-md-3">
+                                <div class="radio">
+                                  <label><input type="radio" name="accountoption" id="member" value="true" checked="checked" id="member">I Have an Account</label>
+                                </div>
+                                </div>
+                                <div class="col-md-6">
+                                <div class="radio">
+                                  <label><input type="radio" name="accountoption" value="guest" id="guest">I am new here</label>
+                                </div>
+                                </div>
+                           </div>
+
+                           <div id="member_option">
+                                <div class="form-group">
+                                    <div class="col-md-4">
+                                    <label class="control-label">EMAIL</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                      <input type="text"  class="form-control"/>
+                                    </div>
+                                </div>
+
+                                 <div class="form-group">
+                                    <div class="col-md-4">
+                                    <label class="control-label">PASSWORD</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                      <input type="password"  class="form-control"/>
+                                    </div>
+                                </div>
+                           </div>
+                           <div id="guest_option">
+
+                               <div class="form-group">
+                                    <div class="col-md-4">
+                                    <label class="control-label">EMAIL</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                      <input type="text"  class="form-control"/>
+                                    </div>
+                                </div>
+
+                                 <div class="form-group">
+                                    <div class="col-md-4">
+                                    <label class="control-label">PHONE NUMBER</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                      <input type="text"  class="form-control"/>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-md-4">
+                                    <label class="control-label">PASSWORD</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                      <input type="password"  class="form-control"/>
+                                    </div>
+                                </div>
+                           </div>
+
+                           
+                            
+
+                            
+
+                            
+
+                              <div class="form-group">
+                                <div class="col-md-4">
+                                  <a href="#" id="to_paper_price" class="btn btn-success"><i class="fa fa-arrow-left fa-fw"></i>Back</a>
+                                </div>
+                                <div class="col-md-8">
+                                  <a class="btn btn-primary btn-lg price_btn">PLACE AN ORDER</a>
+                                </div>
+                             </div>
+
+                        </div>                
+                   
+                   </form>
+                   </div>
+                   </div>
+                   <!-- end of paper info -->
+                   </div>
+
+                </div>
+            </div>
+        </div>
+         
+    </div>
+</div>
+<!-- end of price calc -->
+
+<!-- start of footer section -->
+<div class="col-md-12" id="footer">
+  <div class="row">
+     <div class="col-md-12">
+         <div class="footer_links">
+           <a href="order.html">Order</a>
+           <a href="prices.html">Prices</a>
+           <a href="samples.html">Samples</a>
+           <a href="faq.html">FAQ</a>
+           <a href="hiw.html">How it works</a>
+           <a href="about.html">About Us</a>
+           <a href="contact.html">Contact</a>
+           <a href="legal.html">Legal</a>
+         </div>
+     </div>
+  </div>
+   <div class="row">
+     <div class="col-md-12" id="footer_payments">
+         <img src="images/visa.jpg" width="auto"/>
+         <img src="images/master_card.png" width="auto"/>
+          <img src="images/paypal_whitebg.jpg" width="auto"/>
+     </div>
+  </div>
+   <div class="row">
+     <div class="col-md-offset-2 col-md-8" id="disclaimer">
+       <h6>Disclaimer: GradeExpert is a custom writing service that provides online on-demand
+          written work for assistance purposes. All the work should be used in accordance
+           with the appropriate policies and applicable laws</h6>
+     </div>
+  </div>
+   <div class="row">
+     <div class="col-md-12" id="rights">
+         <h5 align="center">Copyright &copy; Grade Expert 2017. All Rights Reserved</h5>
+     </div>
+  </div>
+</div>
+
+<!-- end of footer section -->
+
+
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+ 
+<!-- custom script -->
+
+<script src="js/orders.js" ></script>
+
+  </body>
+</html>

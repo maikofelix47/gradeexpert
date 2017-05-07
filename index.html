@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Grade Expert</title>
+
+    <!-- Bootstrap -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- custom css -->
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <!-- fontawesome css -->
+
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+
+    <!-- google fonts -->
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <nav class="navbar navbar-default navbar-fixed-top" id="main_navbar">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <a class="navbar-brand" href="/"><img src="images/grade_expert_logo.png" height="60"/></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+      
+       
+      </ul>
+    
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="order.html">Order</a></li>
+        <li><a href="prices.html">Prices</a></li>
+        <li><a href="sample.html">Samples</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="hiw.html">How It Works</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="">Login</a></li>
+        <li><a href="">Sign Up</a></li>     
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="col-md-12" id="main_intro">
+
+     <div class="row" id="intro_row">
+
+           <div class="col-md-6">
+
+                <div class="intro-content">
+                     <div class="intro-title">
+                         <h3>ACADEMIC HELP MADE EASY</h3>
+                         <h4>The safest & fastest academic pain-relieving service</h4>
+                     </div>
+                     <div class="intro-buttons">
+                       <a href="#" class="btn btn-primary order_btn">Order Now</a>
+                       <a href="#" class="btn btn-primary quote_btn">Get Quote</a>
+                     </div>
+                </div>
+
+           </div>
+           <div class="col-md-6">
+            <div class="row" id="price_calculator">
+              <div class="col-offset-md-2 col-md-10">
+               <div class="modal-content">
+                <div class="modal-header">
+                 <h4 align="center"><span class="fa fa-fw fa-calculator" aria-hidden="true"></span>Calculate the Price</h4>
+                </div>
+                <div class="modal-body">
+                   <form class="form-horizontal">
+                     <div class="form-group">
+                        <div class="col-md-4">
+                          <label class="control-label">Academic Level</label>
+                        </div>
+                        <div class="col-md-8">
+                           <select name="academic_level" class="form-control">
+                             <option value="1">High School</option>
+                             <option value="2">Undergraduate</option>
+                             <option value="3">Masters</option>
+                             <option value="4">PHD</option>
+                           </select>
+                        </div>
+                     </div>
+                     <div class="form-group">
+                        <div class="col-md-4">
+                          <label class="control-label">Type of Paper</label>
+                        </div>
+                        <div class="col-md-8">
+                           <select name="type_of_paper" class="form-control">
+                             <option value="1">Biography</option>
+                             <option value="2">Dissertation</option>
+                             <option value="3">Literature Review</option>
+                             <option value="4">Biography</option>
+                           </select>
+                        </div>
+                     </div>
+                      <div class="form-group">
+                        <div class="col-md-4">
+                          <label class="control-label">Deadline</label>
+                        </div>
+                        <div class="col-md-8">
+                           <select name="deadline" class="form-control">
+                             <option value="1">14 days</option>
+                             <option value="2">9 Days</option>
+                             <option value="3">7 Days</option>
+                             <option value="4">5 Days</option>
+                           </select>
+                        </div>
+                     </div>
+                      <div class="form-group">
+                        <div class="col-md-4">
+                          <label class="control-label">Pages</label>
+                        </div>
+                        <div class="col-md-8">
+                          <input type="number" min="0" name="pages" value="1"/>
+                        </div>
+                     </div>
+                      <div class="form-group">
+                        <div class="col-md-5">
+                          <label class="control-label">Total Price KES 300</label>
+                        </div>
+                        <div class="col-md-7">
+                         <button class="btn btn-primary calc_btn" typ="submit">Continue</button>
+                        </div>
+                     </div>
+                   </form>
+                </div>
+               </div>
+              </div>
+            </div>
+           </div>
+
+     </div>
+
+</div>
+<!-- end of main intro -->
+
+<!-- start of choose us section -->
+<div class="col-md-12" id="choose_us">
+     <div class="row">
+        <div clas="col-md-12">
+          <h3 align="center">Why choose our Essay Writing help?</h3>
+          <h5 align="center">Buy essay online for the best price of the top-notch quality</h5>
+        </div>
+     </div>
+     <div class="row" id="choose_us_thumbs">
+      <div class="container">
+        <div class="col-md-4">
+          <div class="thumbnail choose_us_reason_thumb">
+            <i class="fa fa-3x fa-clock-o" aria-hidden="true"></i>
+            <div class="caption choose_us_reason_thumb_caption">
+              <h5>24/7 Support</h5>
+              <p>Not only we provide our customers with the most professional writing services of unmatched quality, but when ordering essay writer help from SpeedyPaper You are treated like a friend. We are the best round-the-clock backup.</p>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-4">
+          <div class="thumbnail choose_us_reason_thumb">
+            <i class="fa fa-3x fa-file-o" aria-hidden="true"></i>
+            <div class="caption choose_us_reason_thumb_caption">
+              <h5>Free Revisions</h5>
+              <p>Only You decide whether your custom written essay 100% meets your requirements and expectations. We are not done with your paper until You are completely satisfied with your paper. We set exemplary customer service.</p>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-4">
+          <div class="thumbnail choose_us_reason_thumb">
+            <i class="fa fa-3x fa-truck" aria-hidden="true"></i>
+            <div class="caption choose_us_reason_thumb_caption">
+              <h5>On-time Delivery</h5>
+              <p>Forget about missing the deadline for submitting the paper. No late submissions with SpeedyPaper Essay writing services. The situation is quite the contrary: we strive to deliver custom written papers prior to initial deadline!</p>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-4">
+          <div class="thumbnail choose_us_reason_thumb">
+            <i class="fa fa-3x fa-check" aria-hidden="true"></i>
+            <div class="caption choose_us_reason_thumb_caption">
+              <h5>100% Plagiarism Free</h5>
+              <p>Each custom written assignment is unique and has no plagiarism at all. Every essay is checked for any instances of similarity at all stages of your order to make sure you receive the final product exactly as you specified it initially. TurnItIn is not an issue for us!.</p>
+            </div>
+          </div>
+        </div>
+          <div class="col-md-4">
+          <div class="thumbnail choose_us_reason_thumb">
+            <i class="fa fa-3x fa-certificate" aria-hidden="true"></i>
+            <div class="caption choose_us_reason_thumb_caption">
+              <h5>High quality papers</h5>
+              <p>More than 1000 satisfied customers chose and are still using our essay writing help services and we never let them down. Satisfaction is guaranteed with each and every single completed custom essay. You will not be disappointed.</p>
+            </div>
+          </div>
+        </div>
+          <div class="col-md-4">
+          <div class="thumbnail choose_us_reason_thumb">
+            <i class="fa fa-3x fa-user" aria-hidden="true"></i>
+            <div class="caption choose_us_reason_thumb_caption">
+              <h5>Individual approach to every client</h5>
+              <p>Getting in touch with us will make your day. You ask for academic essay writing help? You got it. Relax and let us easily deal with your homework online. Our professional essay writers will take care of it.</p>
+            </div>
+          </div>
+        </div>
+
+       </div>
+     </div>
+     <div class="row">
+         <div class="col-md-offset-5 col-md-4">
+            <a href="" class="btn btn-primary order_btn">Order Now</a>
+         </div>
+     </div>
+</div>
+
+<!-- end of choose us section -->
+
+<!-- start of how it works section -->
+<div class="col-md-12" id="how_it_works">
+  <div class="row">
+    <div clas="col-md-12">
+      <h3 align="center">How SpeedyPaper Essay writing service works? </h3>
+      <br>
+      <h5 align="center">The easiest way to get your paper done</h5>
+    </div>
+  </div>
+  <div class="row" id="hiw_thumb_row">
+    <div class="container">
+      <div class="col-md-3">
+          <div class="thumbnail hiw_thumb">   
+            <h1>1. </h1> 
+            <h5>Fill in the order form <i class="fa fa-2x fa-file-text-o fa-fw" aria-hidden="true"></i></h5>       
+            <div class="caption hiw_thumb_caption">
+              <p>Placing an order has never been so fast and easy. Our single page application website ensures a supreme speed of all your operations. Just press the “Order now” button and let the system intuitively guide you through the process.</p>
+            </div>
+          </div>
+      </div>
+       <div class="col-md-3">
+          <div class="thumbnail hiw_thumb">   
+            <h1>2.</h1> 
+            <h5>Calculate the price <i class="fa fa-2x fa-calculator fa-fw" aria-hidden="true"></i></h5>      
+            <div class="caption hiw_thumb_caption">
+              <p>There is even less you need to do at this point – you are the sole maker of the price you pay.No hidden cost. The number of pages, academic level and deadline determine the price.</p>
+            </div>
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="thumbnail hiw_thumb">   
+            <h1>3.</h1> 
+            <h5>Submit payment details <i class="fa fa-2x fa-credit-card-alt fa-fw" aria-hidden="true"></i></h5>      
+            <div class="caption hiw_thumb_caption">
+              <p>All payments are being processed by secure Payment system. We do not store your credit card information. This enables us to guarantee a 100% security of your funds and process payments swiftly.</p>
+            </div>
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="thumbnail hiw_thumb">   
+            <h1>4.</h1> 
+            <h5>Get your paper done <i class="fa fa-2x fa-clipboard fa-fw" aria-hidden="true"></i></h5>      
+            <div class="caption hiw_thumb_caption">
+              <p>After the writer completes the paper you will receive an email asking to check the preview version of it. Just log in to your account and check if you are satisfied with the work done.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- end of how it works section -->
+
+<!-- start of our stats section -->
+
+<div class="col-md-12" id="stats_row">
+  <div class="container">
+   <div class="row">
+       <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-12">
+              <h3>Why go with SpeedyPaper Writing service?</h3>
+            </div>
+            <div class="col-offset-md-2 col-md-8">
+               <ul style="list-style:none">
+                  <li><h4><i class="fa fa-check fa-fw service_check"></i> On-time delivery</h4></li>
+                  <li><h4><i class="fa fa-check fa-fw service_check"></i>Plagiarism Report</h4></li>
+                  <li><h4><i class="fa fa-check fa-fw service_check"></i>100% satisfaction guaranteed</h4></li>
+                  <li><h4><i class="fa fa-check fa-fw service_check"></i>Complete confidentiality</h4></li>
+                  <li><h4><i class="fa fa-check fa-fw service_check"></i>Money Back Guarantee</h4></li>
+               </ul>
+            </div>
+          </div>
+       </div>
+       <div class="col-md-6">
+          <div clas="row">
+            <div class="col-md-12">
+              <h3 align="center">Our stats</h3>
+            </div>
+            <div class="col-md-6">
+                <div class="thumbnail stat_thumb">   
+                  <h2>55971</h2>
+                  <h5>Completed orders</h5>
+                </div>
+            </div>
+            <div class="col-md-6">
+               <div class="thumbnail stat_thumb">   
+                  <h2>961</h2>
+                  <h5>Qualified writers</h5>
+                </div>
+            </div>
+            <div class="col-md-6">
+               <div class="thumbnail stat_thumb">   
+                  <h2>433</h2>
+                  <h5>Writers online</h5>
+                </div>
+            </div>
+              <div class="col-md-6">
+               <div class="thumbnail stat_thumb">   
+                  <h2>4.58/5</h2>
+                  <h5>From 15322 reviews</h5>
+                </div>
+             </div>
+
+          </div>
+       </div>
+   </div>
+  </div>
+</div>
+
+<!-- end of stats section -->
+
+<!-- accepted payments section -->
+<div class="col-md-12" id="payment_methods">
+   <div class="row">
+   <div class="col-md-12">
+      <h3 align="center">Payment Methods</h3>
+      <hr class="intro-divider" width="40%" />
+   </div>
+ </div>
+   <div class="row">
+     <div class="col-md-4">
+               <div class="thumbnail payments_thumb">   
+                <img src="images/visa.jpg" width="60%"/>
+                </div>
+      </div>
+       <div class="col-md-4">
+               <div class="thumbnail payments_thumb">   
+                <img src="images/paypal_logo.png" width="60%"/>
+                </div>
+      </div>
+
+       <div class="col-md-4">
+               <div class="thumbnail payments_thumb">   
+                <img src="images/master_card.png" width="60%"/>
+                </div>
+      </div>
+
+   </div>
+</div>
+
+<!-- end of accepted payments section -->
+
+<!-- follow us -->
+<div class="col-md-12" id="follow_us">
+   
+     <div class="row">
+
+        <div class="col-md-offset-2 col-md-8">
+            <h3 align="center">WANT TO SAVE SOME MONEY ORDERING WITH US?</h3>
+            <h5 align="center">Follow our social media for special offers, discounts, and more.</h5>
+               <div class="social_media">
+                 <a href=""><i class="fa fa-3x fa-facebook fa-fw"></i></a>
+                 <a href=""><i class="fa fa-3x fa-twitter fa-fw"></i></a>
+                 <a href=""><i class="fa fa-3x fa-google-plus fa-fw"></i></a>
+               </div>
+        </div>
+       
+        
+
+     </div>
+    
+</div>
+
+<!-- end of follow us -->
+
+<!-- start of fedback section -->
+<div class="col-md-12" id="cust_feedback">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 align="center">Still having doubts about Grade Expert?</h3>
+        <h5 align="center">Check what our customers have to say!</h5>
+        <br>
+      </div>
+        <div class="col-md-12">
+          <!-- start of carousel -->
+              <div id="feedback-carousel" class="carousel slide" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#feedback-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#feedback-carousel" data-slide-to="1"></li>
+                    <li data-target="#feedback-carousel" data-slide-to="2"></li>
+                  </ol>
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                     
+                     
+                         <div class="carousel_content">
+                           <blockquote>
+                              <h4>The experience was excellent. You did my essay so well that I don't know how
+                            to thank you! I know that my dissertation you will do too! Here I found out how
+                             easily I can get great academic papers and don't my time on boring writing! 
+                             Thanks for help!</h4>
+                          </blockquote>
+                           <h5 align="right"> - John Simon</h5>
+                         
+                         </div>
+                       
+                     
+                    </div>
+                    <div class="item">
+              
+                          <div class="carousel_content">
+                             <blockquote>
+                                <h4>I'm really satisfied by the work overall. I'd like to thank the editor 
+                                for finishing the job way much earlier than the deadline so that I have more
+                                 time to adjust the work before submission. I am very pleased and thankful 
+                                 for the SpeedyPaper team. My thesis now looks perfect!!!! I shall definitely
+                                  order from them again. Students-friendly prices </h4>
+                             </blockquote>
+                               <h5 align="right"> - Ron Weasley</h5>
+                          </div>
+                       
+                    </div>
+
+                     <div class="item">
+              
+                          <div class="carousel_content">
+                             <blockquote>
+                                <h4>I use to order essays back in college with this service. And recently I 
+                                  needed couple of articles for my work. It's awesome when there are services
+                                   like this on the Internet that do not fool around. If you need real help - this
+                                    is the service to use. The service is not a scam! They are reliable!</h4>
+                             </blockquote>
+                              <h5 align="right"> - Frank Gallagher</h5>
+                          </div>
+                       
+                    </div>
+                    
+                  </div>
+
+                  <!-- Controls -->
+                  <a class="left carousel-control" href="#feedback-carousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#feedback-carousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+<!-- end of carousel -->
+        </div>
+        <div class="col-md-offset-5 col-md-4">
+              <a href="#" class="btn btn-primary order_btn">Order Now</a>
+              <a href="#" class="btn btn-primary quote_btn">Get Free Quote</a>
+        </div>
+    </div>
+</div>
+<!-- end of feedback section -->
+
+<div class="col-md-12" id="skills_section">
+  <div class="container">
+   <div class="row">
+       <div class="col-md-3">
+          <h3>Writing Skills</h3>
+           <ul>
+             <li><h4>Essay Writing</h4></li>
+             <li><h4>Argumentative writing</h4></li>
+             <li><h4>Writing a biography</h4></li>
+             <li><h4>What is creative writing</h4></li>
+             <li><h4>Critical thinking skills</h4></li>
+             <li><h4>Custom essay help</h4></li>
+           </ul>
+           
+       </div>
+      <div class="col-md-3">
+
+         <h3>Academic Assistance</h3>
+           <ul>
+             <li><h4>Annotated bibliography</h4></li>
+             <li><h4>Writing a business plan</h4></li>
+             <li><h4>Writing coursework</h4></li>
+             <li><h4>Presentation help</h4></li>
+             <li><h4>How to write thesis proposal</h4></li>
+             <li><h4>Help with essay writing</h4></li>
+           </ul>
+           
+       </div>
+
+       <div class="col-md-3">
+
+         <h3>Admission Writing</h3>
+           <ul>
+             <li><h4>CV template</h4></li>
+             <li><h4>Admission essay</h4></li>
+             <li><h4>Application letter</h4></li>
+             <li><h4>University Admissions</h4></li>
+             <li><h4>How to write a personal statement</h4></li>
+           </ul>
+           
+       </div>
+
+        <div class="col-md-3">
+
+         <h3>Professional Review Writing</h3>
+           <ul>
+             <li><h4>Article review</h4></li>
+             <li><h4>Writing a book review</h4></li>
+             <li><h4>Writing a literature review</h4></li>
+           </ul>
+           
+       </div>
+   </div>
+  </div>
+</div>
+
+<!-- start of footer section -->
+<div class="col-md-12" id="footer">
+  <div class="row">
+     <div class="col-md-12">
+         <div class="footer_links">
+           <a href="order.html">Order</a>
+           <a href="prices.html">Prices</a>
+           <a href="samples.html">Samples</a>
+           <a href="faq.html">FAQ</a>
+           <a href="hiw.html">How it works</a>
+           <a href="about.html">About Us</a>
+           <a href="contact.html">Contact</a>
+           <a href="legal.html">Legal</a>
+         </div>
+     </div>
+  </div>
+   <div class="row">
+     <div class="col-md-12" id="footer_payments">
+         <img src="images/visa.jpg" width="auto"/>
+         <img src="images/master_card.png" width="auto"/>
+          <img src="images/paypal_whitebg.jpg" width="auto"/>
+     </div>
+  </div>
+   <div class="row">
+     <div class="col-md-offset-2 col-md-8" id="disclaimer">
+       <h6>Disclaimer: GradeExpert is a custom writing service that provides online on-demand
+          written work for assistance purposes. All the work should be used in accordance
+           with the appropriate policies and applicable laws</h6>
+     </div>
+  </div>
+   <div class="row">
+     <div class="col-md-12" id="rights">
+         <h5 align="center">Copyright &copy; Grade Expert 2017. All Rights Reserved</h5>
+     </div>
+  </div>
+</div>
+
+<!-- end of footer section -->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
